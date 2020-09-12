@@ -354,8 +354,8 @@ label start:
                 
         menu:
             "give up":
-            $buzz_flag = True
             jump buzzington_end
 
     label buzzington_end:
+    $buzz_flag = True
     return
