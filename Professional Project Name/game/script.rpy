@@ -355,17 +355,16 @@ label start:
         b "The real game begins now."
         
         if buzz_flag == True:
+            "Congratulations."
         
-        "Congratulations."
+            "\n\BAD END - See you in the Sequal."
         
-        "\n\BAD END - See you in the Sequal."
-        
-        return
+            return
         
         else
-        menu:
-            "give up":
-                jump buzzington_end
+            menu:
+                "give up":
+                    jump buzzington_end
 
     label buzzington_end:
     $buzz_flag = True

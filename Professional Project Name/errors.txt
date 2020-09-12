@@ -2,9 +2,13 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 356: choice menuitem expects a non-empty block.
-    "give up":
-              ^
+File "game/script.rpy", line 357: if statement expects a non-empty block.
+    if buzz_flag == True:
+                         ^
+
+File "game/script.rpy", line 365: expected statement.
+    else
+        ^
 
 Ren'Py Version: Ren'Py 7.3.5.606
-Sat Sep 12 16:18:35 2020
+Sat Sep 12 16:32:46 2020
