@@ -353,11 +353,27 @@ label start:
         play music "audio/reversereverb.mp3"
         
         b "The real game begins now."
-                
+        
+        if buzz_flag == True:
+		
+		"Congratulations."
+		
+		"\n\BAD END - See you in the Sequal."
+		
+		return
+		
+		else
         menu:
             "give up":
                 jump buzzington_end
 
     label buzzington_end:
     $buzz_flag = True
-    return
+	
+	b "I have taken control of the narrative now."
+	
+	b "This story, like all other stories, is mine."
+	
+	"I must protect causality."
+	
+    jump add_buzzington
