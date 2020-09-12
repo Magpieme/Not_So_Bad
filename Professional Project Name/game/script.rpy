@@ -339,10 +339,23 @@ label start:
         return
         
     label add_buzzington:
+    
+        hide raidd fear
+        
         b "You have done well, child."
+        
+        scene bg dark
         
         b "Welcome."
         
-        b "The real game begins now."
+        play sound "audio/reversereverb.mp3"
         
-        return
+        b "The real game begins now."
+                
+        menu:
+            "give up":
+            $buzz_flag = True
+            jump buzzington_end
+
+    label buzzington_end:
+	return
