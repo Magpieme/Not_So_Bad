@@ -339,6 +339,8 @@ label start:
         return
         
     label add_buzzington:
+        stop music
+        stop sound
     
         hide raidd fear
         
@@ -348,13 +350,13 @@ label start:
         
         b "Welcome."
         
-        play sound "audio/reversereverb.mp3"
+        play music "audio/reversereverb.mp3"
         
         b "The real game begins now."
                 
         menu:
             "give up":
-            jump buzzington_end
+                jump buzzington_end
 
     label buzzington_end:
     $buzz_flag = True
