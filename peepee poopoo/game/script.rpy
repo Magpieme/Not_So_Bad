@@ -6,6 +6,7 @@
 define e = Character("Onyx Raidd", who_color="#9a0a0c")
 define f = Character("???", who_color="#86cecb")
 define g = Character("Gibby", who_color="#86cecb")
+define b = Character("Mr. Buzzington", who_color="#b39700")
 
 # The game starts here.
 
@@ -107,8 +108,11 @@ label start:
         $mom_flag = False
         show raidd fearagape
         e "i dont fucking know either akjslkjfs"
-        jump choice1_done
-
+		menu:
+			"yeah": 
+        	jump choice1_done
+			"who does tho":
+			jump add_buzzington
 
     label choice1_no:
         play sound "audio/doin-ur-mom.mp3"
@@ -332,3 +336,12 @@ label start:
         # This ends the game.
 
         return
+		
+    label add_buzzington:
+		b "You have done well, child."
+		
+		b "Welcome."
+		
+		b "The real game begins now."
+		
+		return
