@@ -109,10 +109,11 @@ label start:
         show raidd fearagape
         e "i dont fucking know either akjslkjfs"
         menu:
-            "yeah": 
-            jump choice1_done
+            "yeah":
+                show raidd fearagape
+                jump choice1_done
             "who does tho":
-            jump add_buzzington
+                jump add_buzzington
 
     label choice1_no:
         play sound "audio/doin-ur-mom.mp3"
