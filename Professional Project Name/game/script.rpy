@@ -113,6 +113,7 @@ label start:
                 show raidd fearagape
                 jump choice1_done
             "who does tho":
+                $buzz_flag = False
                 jump add_buzzington
 
     label choice1_no:
@@ -354,17 +355,17 @@ label start:
         
         b "The real game begins now."
         
-        if buzz_flag == True:
-            "Congratulations."
-        
-            "\n\BAD END - See you in the Sequal."
-        
-            return
-        
-        else
+        if buzz_flag == False:
             menu:
                 "give up":
                     jump buzzington_end
+
+        else:        
+            "Congratulations."
+
+            "\n\BAD END - See you in the Sequal."
+
+            return
 
     label buzzington_end:
     $buzz_flag = True
