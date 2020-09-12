@@ -107,8 +107,11 @@ label start:
         $mom_flag = False
         show raidd fearagape
         e "i dont fucking know either akjslkjfs"
-        jump choice1_done
-
+		menu:
+			"yeah": 
+        	jump choice1_done
+			"who does tho":
+			jump add_buzzington
 
     label choice1_no:
         play sound "audio/doin-ur-mom.mp3"
