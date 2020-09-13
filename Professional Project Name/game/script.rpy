@@ -16,9 +16,9 @@ label start:
 
     "The universe falters before you."
 
-    "This was supposed to be a normal day..?"
+    "This was supposed to be a normal day...?"
 
-    "Did you spend too much time in front of your T.V.?"
+    "Did you spend too much time in front of your TV?"
 
     "Did you awaken the wrath of an eldritch beast whilst you were dancing in your dreams?"
 
@@ -44,7 +44,7 @@ label start:
 
     "The firm knock of the wooden floor greets you as you open your eyes."
 
-    "Shit.. why did landing on the ground hurt so much...?"
+    "Shit. Why did landing on the ground hurt so goddamn much...?"
 
 
     "It's the only thing here that makes a dollup of sense."
@@ -59,9 +59,9 @@ label start:
     # These display lines of dialogue.
 
     show raidd fearagape
-    e "holy fuck."
+    e "Holy fuck."
 
-    e "why am I..."
+    e "Why am I..."
     show raidd fear:
         xalign 1.0
         yalign 1.0
@@ -78,28 +78,28 @@ label start:
 
     show raidd fearagape
 
-    e "why am i in fucking icarly???"
+    e "...Am I in fucking iCarly."
 
     play music "/audio/epicbgm.mp3" fadein 1
 
     show raidd fear
-    "What would be blissful nostalgia about your favorite family-friendly sitcom from the early 2000's had been haulted by the... reality... of it all."
+    "What would be blissful nostalgia about your favorite family-friendly sitcom from the early 2000's had been hauted by the... absurdity of it all."
 
     "You scramble through your memory, trying to figure out how you got roped into.."
 
     show raidd alwayshasbeen
 
-    "Whatever this hellish place was...."
+    "Whatever this shitshow was. You... you live in Philly, how the hell did you get to Los Angeles-"
 
     show raidd fear
 
     menu:
-        "i dont know lmfao":
+        "beats me lmfao":
             jump choice1_yes
 
 
 
-        "i came here after doin ur mom":
+        "i got here doin ur mom":
             jump choice1_no
 
 
@@ -107,65 +107,71 @@ label start:
     label choice1_yes:
         $mom_flag = False
         show raidd fearagape
-        e "i dont fucking know either akjslkjfs"
+        e "beats me lmfao"
         menu:
-            "yeah":
+            "Yeah. Let's be honest though...":
                 show raidd fearagape
                 jump choice1_done
-            "who does tho":
+            "Who does?":
                 $buzz_flag = False
                 jump add_buzzington
 
     label choice1_no:
         play sound "audio/doin-ur-mom.mp3"
         $mom_flag = True
-        "You stop to process the words that was haphazardly spewed out of your own mouth."
-        "Were those even your own words...?"
+        "You stop to process the words that suddenly spewed from your mouth."
+        "You... you didn't say that. That wasn't you."
         show raidd fearagape
-        e "why are you screwing my mom too???"
+        e "What the fuck???"
         show raidd blush
-        e "the only thing i was screwing over was my chances with that cute girl!!"
+        e "The only thing I was screwing over was my chances with that cute girl!!!"
         show raidd fearagape
-        e "goddamnit ehwatthefuck"
+        "You think of who you left behind, back in your own world."
+        "...Pecenu. When she comes back, she's going to wonder why you're not saying anything to her."
+        e "...Shit."
 
         jump choice1_done
 
 
 
     label choice1_done:
-    "Your mind jumps back to the room sprawled around you."
+    "You decide to try and figure out how you got here to keep your mind off of that whole thing. You can deal with it later."
 
-    "The consistency of the props.. the material of the floor below you"
+    "The consistency of the props.. the material of the floor below you."
 
-    "How did they get the scenery so exact.."
+    "How did they always keep this place so... precise. Doesn't this stuff get pushed around from time to time?"
 
-    "You think back on how you are so distinclty aware of all this iCarly Information."
+    "You think back on how you are so distinctly aware of all this iCarly Lore."
 
-    e "my sister watched that fucking show when she was like eight??"
+    e "...Oh my god my sister watched this show when she was like, a teenager."
 
-    e "god, it was an absolute slog to watch."
+    e "Shit was trash."
 
-    e "i could have used the fucking sega xbox to play fucking sonic the hedgehog!!!"
+    e "Could've used the fucking Sega Xbox to play fucking Sonic the Hedgehog!!!"
 
-    "You grimace as your fairly mild and inconsequential childhood trauma flashes befor your eyes."
+    "You grimace as a milder part of your childhood trauma flashes before your eyes."
 
-    e "the themes is fucking awful, too."
+    e "That theme is like nails on a chalkboard, too."
 
     show raidd blush
 
-    e "instead of the smooth buttery beats of knuckles the Echinda whispering sweet nothings to me.."
+    e "...Much prefer Knuckles the Echinda whispering sweet nothings to me..."
 
     show raidd forwardagape
 
-    e "not in a gay way though. im not gay. i like girls. and pecenu."
+    e "NOT IN A GAY WAY THOUGH. I'M NOT GAY. I like... girls. And Pecenu."
+    
+    "...You can almost *hear* the Pumpkin Hill theme."
+    "Those chill tunes... those were simpler times."
+    "Then again, anything is simpler than being mysteriously transported onto the set of iCarly."
 
     show raidd fearagape
 
-    e "the way they got some fucking {b} FEMOID {/b} to screech into our eardrums!"
+    e "The way they got some fucking {b} FEMOID {/b} to perform... that!"
 
-    e "giving all of our ears fucking cooties!"
+    e "Giving all of our ears fucking cooties! It's so damn loud!"
 
-    e "how did they physically make a song that painful to listen to-"
+    e "How did they make a song that {b} PHYSICALLY PAINFUL {/b} to listen to!"
 
     play music"/audio/icarly-theme-dance.mp3" fadeout 1
 
@@ -173,26 +179,26 @@ label start:
     e " "
 
     show raidd fearagape
-    e "OH GOD FUCKING DAMN IT"
+    e "OH GOD FUCKING DAMN IT-"
 
     show raidd fear
-    "You attempt to bury yourself in the depths of your hoodie."
+    "You attempt to bury yourself in the depths of your jacket."
 
-    "Miranda Cosgrove's voice forces you out of your shelter."
+    "Despite your efforts, you cannot escape the damning voice of Miranda Cosgrove."
 
     scene scenehelp
 
     hide raidd fear
 
-    "You watch the universe convulse in horror."
+    "She mocks you. You attempt to hide, but the music seems to be coming from inside your head."
 
-    e "hello...?"
+    e "stop..."
 
-    "Nobody answers. The instrumental only continues to blast."
+    "Of course, nobody answers. In fact, you think you can {i} feel {/i} the instrumentals get louder."
 
-    "You can't just talk your way out of this one."
+    "It's deafening."
 
-    "Instead of the easy comfort of ignoring the events around you, you were shoved facefirst into a surreal hellscape."
+    "You're a few seconds away from curling up in a ball and just... giving up on all of this."
 
     scene helpcutscene
     with Dissolve(.5)
@@ -241,41 +247,40 @@ label start:
     e "holy shit?????"
 
     menu:
-        "dad??? you came back from the store???":
+        "...Dad?":
             jump choice2_yes
 
 
-        "i thought we broke up what the fuck!!!":
+        "... (Why is my ex here?!)":
             jump choice2_no
 
 
     label choice2_yes:
-        show raidd fear:
-            xalign 0.25
-            yalign 1.0
-        "The world stops."
-
-        "A confused plea dribbles out of your mouth."
         show raidd fearagape:
             xalign 0.25
             yalign 1.0
-        e "dad..?"
+        "You can only stare for a few seconds before choking that one word out."
+
+        show raidd fear:
+            xalign 0.25
+            yalign 1.0
+        e "You..."
         show raidd cryagape:
             xalign 0.25
             yalign 1.0
-        e "its been... its been seven years..."
+        e "I..."
 
-        e "mom.... shes gone..."
+        e "Where have you been?!"
 
-        e "do you know how ALONE i felt.????"
+        e "...do you know how {b} ALONE {/b} I felt?"
 
         show raidd cry
 
-        "Your soft sniffling stifles the zany atmosphere of the props around you."
+        "Your soft sniffling is a stark contrast to the zany atmosphere around you."
 
-        "How alone you thought you were..."
+        "You never met your dad, but you just {i} know {/i} that it's him..."
 
-        "After what feels like hours, you manage to conjure up a sentence."
+        "After what feels like hours, you manage to conjure up a pitiful sentence."
 
         show raidd cryagape:
             xalign 0.25
@@ -285,39 +290,43 @@ label start:
 
         if mom_flag == True:
 
-            "Gibby pauses before you."
+            "Gibby- your dad- stares at you for a second."
 
-            "Was this a moment of hope? A single giblet of solace?"
+            "You can't quite pin the expression on his face."
 
             show gibby smile:
                 xalign 0.75
                 yalign 1.0
 
-            "His warped smile shoots down your hope."
+            "You feel distraught, seeing his expression change like that."
 
-            g "you know exactly what i was doing, Onyx."
+            g "{b} you know exactly what i was doing, onyx. {/b}"
 
-            e "what??"
+            e "...Huh?"
 
             scene goddiedonthisholyday
             hide gibby smile
             hide raidd cryagape
 
-            "Gibby expands across the room. Your foot bumps into a chunk of his rolls."
+            "Gibby expands across the room. Your foot bumps into a chunk of his rolls before the mass starts to consume you."
 
-            e "PLEASE!!"
+            e "wAIT-"
 
-            "You attempt to writhe yourself free."
+            "You attempt to pull yourself free."
 
             "Nothing happens."
 
-            e "STOP!! PLEASE!!!"
+            e "S-STOP! WAIT!"
 
-            e "I WANT TO GO HOME!!!"
+            e "DON'T- STOP!!"
 
-            e "ERIC!! MAMI!!!!"
+            e "...I WANT TO GO HOME!"
 
-            e "HELP!! PLEASE!!!"
+            e "HELP!"
+            
+            e "MA! ERIC!"
+            
+            e "{i}S-SOMEONE!{/i}"
 
             "Nobody answers."
 
@@ -328,9 +337,9 @@ label start:
 
 
     label choice2_badend:
-        g "your mom says hi."
+        g "your mom says hi, by the way."
         play sound "audio/doin-ur-mom.mp3"
-        "\n\BAD END - STACEYS MOM"
+        "\n\BAD END - MEET YOUR MOTHER"
 
         return
 
