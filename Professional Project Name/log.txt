@@ -240,4 +240,8 @@ Total time until interface ready: 1.56699991226s
 - 0.067000 seconds to render 5 frames.
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles to
+Build styles took 0.01s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
