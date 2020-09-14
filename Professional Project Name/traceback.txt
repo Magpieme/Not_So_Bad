@@ -1,0 +1,28 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 358, in script
+    "Congratulations."
+  File "game/script.rpy", line 358, in <module>
+    "Congratulations."
+NameError: name 'buzz_flag' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 358, in script
+    "Congratulations."
+  File "C:\Users\lisac\Downloads\programs\Ren'Py\renpy-7.3.5-sdk\renpy\ast.py", line 1832, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\lisac\Downloads\programs\Ren'Py\renpy-7.3.5-sdk\renpy\python.py", line 2059, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "C:\Users\lisac\Downloads\programs\Ren'Py\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 358, in <module>
+    "Congratulations."
+NameError: name 'buzz_flag' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 7.3.5.606
+peepee poopoo 1.0
+Sat Sep 12 16:39:32 2020
