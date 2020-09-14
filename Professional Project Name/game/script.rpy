@@ -7,6 +7,7 @@ define e = Character("Onyx Raidd", who_color="#9a0a0c")
 define f = Character("???", who_color="#86cecb")
 define g = Character("Gibby", who_color="#86cecb")
 define b = Character("Mr. Buzzington", who_color="#b39700")
+define a = Character("???", who_color="#b39700")
 
 # The game starts here.
 
@@ -45,7 +46,6 @@ label start:
     "The firm knock of the wooden floor greets you as you open your eyes."
 
     "Shit. Why did landing on the ground hurt so goddamn much...?"
-
 
     "It's the only thing here that makes a dollup of sense."
 
@@ -89,7 +89,9 @@ label start:
 
     show raidd alwayshasbeen
 
-    "Whatever this shitshow was. You... you live in Philly, how the hell did you get to Los Angeles-"
+    "Whatever this shitshow was." 
+    
+    "You... you live in Philly, how the hell did you get to Los Angeles-"
 
     show raidd fear
 
@@ -108,11 +110,26 @@ label start:
         $mom_flag = False
         show raidd fearagape
         e "beats me lmfao"
+        
+        "You attempt to force out a laugh."
+        
+        "iCarly was a sitcom, right? This shit was supposed to make someone laugh..."
+        
+        show raidd fear
+        
+        "Your stilted laughter only throws you further into reality"
+        
+        "Shit.. why are you here..."
+        
+        show raidd alwayshasbeen.
+        
+        "The idle buzz of the room around you catches your attention."
+      
         menu:
-            "Yeah. Let's be honest though...":
+            "Take the generous offer of that welcome distraction.":
                 show raidd fearagape
                 jump choice1_done
-            "Who does?":
+            "hello..?":
                 $buzz_flag = False
                 jump add_buzzington
 
@@ -278,7 +295,7 @@ label start:
 
         "Your soft sniffling is a stark contrast to the zany atmosphere around you."
 
-        "You never met your dad, but you just {i} know {/i} that it's him..."
+        "You never met your dad, but you just {i}know{/i} that it's him..."
 
         "After what feels like hours, you manage to conjure up a pitiful sentence."
 
@@ -349,7 +366,24 @@ label start:
         return
         
     label add_buzzington:
+        "You feel something {i}observing{/i} you.
+
+        "Thousands of eyes across your back.. all staring at a single pinpoint..."
+
         stop music
+        
+        # add an ambient humming sound here?? like a humm in a room w a mix of like fly noises?? i can google stock effects later ig
+        
+        "The room gets louder."
+        
+        "There's so much to observe.. So much to see..."
+        
+        "You can't hear yourself think."
+        
+        "God.. it's almost as if.."
+        
+        a "This isn't your story anymore."
+
         stop sound
     
         hide raidd fear
